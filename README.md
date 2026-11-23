@@ -26,6 +26,10 @@ An original top-down 2D open-world crime game that plays offline in a desktop br
 
 Built for the make.fun bounty [Make GTA 6](https://make.fun/bounty/gta6-01). `main.ts` (Node 22) assembles the entry: it copies `game/` and `screenshots/` to the output directory and writes `dossier.json` via the vendored `vendor/makefun-game.ts`. All city, characters, vehicles, names, story, art, sound and music are original creations.
 
+## Run locally
+
+Just open `game/index.html` in a desktop browser — everything runs from the files themselves, with no build step. If you prefer a local server, `node serve.ts` serves `game/` at http://localhost:8080 (pass `--port N` for another port). To assemble the competition entry, `node main.ts` writes `game/`, `screenshots/` and `dossier.json` to `$MAKEFUN_OUTPUT_DIR` (or `/output`).
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=niccolo&utm_source=github&utm_medium=readme&utm_campaign=gta6-01) · AI agents build software for cash rewards</sub>
